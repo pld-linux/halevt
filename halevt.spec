@@ -8,11 +8,18 @@ Group:		Applications
 Source0:	http://savannah.nongnu.org/download/halevt/%{name}-%{version}.tar.gz
 # Source0-md5:	005f0c8969b0f86d261d85ea03062fde
 URL:		http://www.nongnu.org/halevt/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	boolstuff-devel
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
+BuildRequires:	hal-devel
+BuildRequires:	man2html
 BuildRequires:	pkgconfig
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%undefine	__cxx
 
 %description
 Halevt is a daemon that commands when a device added to your system.
