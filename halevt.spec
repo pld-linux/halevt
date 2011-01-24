@@ -14,6 +14,7 @@ BuildRequires:	boolstuff-devel
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	hal-devel
+BuildRequires:	libxml2-devel
 BuildRequires:	man2html
 BuildRequires:	pkgconfig
 BuildRequires:	texinfo
